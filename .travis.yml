@@ -6,4 +6,4 @@ jobs:
     - stage: build
       script: xcodebuild clean build -scheme Repositories -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.4,name=iPhone X' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
     - stage: test
-      script: xcodebuild test -scheme RepositoriesTests -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.4,name=iPhone X' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+      script: carthage update --platform iOS && xcodebuild test -scheme Repositories -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.4,name=iPhone X' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
