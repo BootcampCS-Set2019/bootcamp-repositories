@@ -14,6 +14,8 @@
 		DCE13D5A2345223E00D2938A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE13D582345223E00D2938A /* Quick.framework */; };
 		DCE13D61234530B300D2938A /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCE13D572345223E00D2938A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCE13D62234530B300D2938A /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCE13D582345223E00D2938A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCE13D652345328100D2938A /* MTGSDKSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE13D642345328100D2938A /* MTGSDKSwift.framework */; };
+		DCE13D68234532A800D2938A /* MTGSDKSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCE13D642345328100D2938A /* MTGSDKSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DCE13D68234532A800D2938A /* MTGSDKSwift.framework in CopyFiles */,
 				DCE13D61234530B300D2938A /* Nimble.framework in CopyFiles */,
 				DCE13D62234530B300D2938A /* Quick.framework in CopyFiles */,
 			);
@@ -49,6 +52,7 @@
 		BDEA284323440A77002E4BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCE13D572345223E00D2938A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		DCE13D582345223E00D2938A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		DCE13D642345328100D2938A /* MTGSDKSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MTGSDKSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			files = (
 				DCE13D592345223E00D2938A /* Nimble.framework in Frameworks */,
 				DCE13D5A2345223E00D2938A /* Quick.framework in Frameworks */,
+				DCE13D652345328100D2938A /* MTGSDKSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,7 @@
 				BDEA284023440A77002E4BEA /* RepositoriesTests */,
 				BDEA283423440A76002E4BEA /* Products */,
 				DCE13D562345223E00D2938A /* Frameworks */,
+				DCE13D632345322400D2938A /* MTGSDKSwift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +122,14 @@
 				DCE13D582345223E00D2938A /* Quick.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCE13D632345322400D2938A /* MTGSDKSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DCE13D642345328100D2938A /* MTGSDKSwift.framework */,
+			);
+			path = MTGSDKSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +196,7 @@
 				TargetAttributes = {
 					BDEA283223440A76002E4BEA = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					BDEA283B23440A77002E4BEA = {
 						CreatedOnToolsVersion = 10.3;
@@ -395,6 +410,7 @@
 		BDEA284823440A77002E4BEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -402,9 +418,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/MTGSDKSwift",
 				);
 				INFOPLIST_FILE = Repositories/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -416,6 +434,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bootcamp.set2019.Repositories;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -424,6 +443,7 @@
 		BDEA284923440A77002E4BEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -431,9 +451,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/MTGSDKSwift",
 				);
 				INFOPLIST_FILE = Repositories/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
