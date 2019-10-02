@@ -10,6 +10,8 @@
 		BDEA283D23440A77002E4BEA /* Repositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEA283323440A76002E4BEA /* Repositories.framework */; };
 		BDEA284223440A77002E4BEA /* RepositoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEA284123440A77002E4BEA /* RepositoriesTests.swift */; };
 		BDEA284423440A77002E4BEA /* Repositories.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEA283623440A76002E4BEA /* Repositories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCE13D592345223E00D2938A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE13D572345223E00D2938A /* Nimble.framework */; };
+		DCE13D5A2345223E00D2938A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE13D582345223E00D2938A /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		BDEA283C23440A77002E4BEA /* RepositoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEA284123440A77002E4BEA /* RepositoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTests.swift; sourceTree = "<group>"; };
 		BDEA284323440A77002E4BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE13D572345223E00D2938A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		DCE13D582345223E00D2938A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE13D592345223E00D2938A /* Nimble.framework in Frameworks */,
+				DCE13D5A2345223E00D2938A /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +62,7 @@
 				BDEA283523440A76002E4BEA /* Repositories */,
 				BDEA284023440A77002E4BEA /* RepositoriesTests */,
 				BDEA283423440A76002E4BEA /* Products */,
+				DCE13D562345223E00D2938A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +91,15 @@
 				BDEA284323440A77002E4BEA /* Info.plist */,
 			);
 			path = RepositoriesTests;
+			sourceTree = "<group>";
+		};
+		DCE13D562345223E00D2938A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCE13D572345223E00D2938A /* Nimble.framework */,
+				DCE13D582345223E00D2938A /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +385,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Repositories/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -394,6 +414,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Repositories/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
