@@ -10,12 +10,7 @@
 		BDEA283D23440A77002E4BEA /* Repositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEA283323440A76002E4BEA /* Repositories.framework */; };
 		BDEA284223440A77002E4BEA /* RepositoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEA284123440A77002E4BEA /* RepositoriesTests.swift */; };
 		BDEA284423440A77002E4BEA /* Repositories.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEA283623440A76002E4BEA /* Repositories.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCE13D592345223E00D2938A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE13D572345223E00D2938A /* Nimble.framework */; };
-		DCE13D5A2345223E00D2938A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE13D582345223E00D2938A /* Quick.framework */; };
-		DCE13D61234530B300D2938A /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCE13D572345223E00D2938A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DCE13D62234530B300D2938A /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCE13D582345223E00D2938A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCE13D652345328100D2938A /* MTGSDKSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE13D642345328100D2938A /* MTGSDKSwift.framework */; };
-		DCE13D68234532A800D2938A /* MTGSDKSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCE13D642345328100D2938A /* MTGSDKSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,21 +22,6 @@
 			remoteInfo = Repositories;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		DCE13D602345309000D2938A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DCE13D68234532A800D2938A /* MTGSDKSwift.framework in CopyFiles */,
-				DCE13D61234530B300D2938A /* Nimble.framework in CopyFiles */,
-				DCE13D62234530B300D2938A /* Quick.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BDEA283323440A76002E4BEA /* Repositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,8 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE13D592345223E00D2938A /* Nimble.framework in Frameworks */,
-				DCE13D5A2345223E00D2938A /* Quick.framework in Frameworks */,
 				DCE13D652345328100D2938A /* MTGSDKSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,7 +133,6 @@
 				BDEA283023440A76002E4BEA /* Frameworks */,
 				BDEA283123440A76002E4BEA /* Resources */,
 				BDEA284D23440A86002E4BEA /* ShellScript */,
-				DCE13D602345309000D2938A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -173,6 +150,7 @@
 				BDEA283823440A77002E4BEA /* Sources */,
 				BDEA283923440A77002E4BEA /* Frameworks */,
 				BDEA283A23440A77002E4BEA /* Resources */,
+				BDB7E9D5234540E2002FB416 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -239,6 +217,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BDB7E9D5234540E2002FB416 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		BDEA284D23440A86002E4BEA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,6 +474,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
 				INFOPLIST_FILE = RepositoriesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,6 +493,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
 				INFOPLIST_FILE = RepositoriesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
