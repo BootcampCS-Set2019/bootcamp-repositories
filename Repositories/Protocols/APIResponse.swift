@@ -8,4 +8,4 @@
 
 import MTGSDKSwift
 
-public typealias APIResponse<T> = ([T]?, NetworkError?) -> Void
+public typealias APIResponse<T> = (T?, NetworkError?) -> Void

@@ -9,5 +9,5 @@
 import MTGSDKSwift
 
 public protocol CardsRepository {
-    func getCards(inSet setCode: String, atPage page: Int, completion: @escaping APIResponse<Card>)
+    func getCards(inSet setCode: String, atPage page: Int, completion: @escaping APIResponse<[Card]>)
 }

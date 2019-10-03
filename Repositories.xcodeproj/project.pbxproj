@@ -19,6 +19,10 @@
 		DCC7FF56234682A700B60A48 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF53234682A700B60A48 /* APIResponse.swift */; };
 		DCC7FF57234682A700B60A48 /* SetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF54234682A700B60A48 /* SetsRepository.swift */; };
 		DCC7FF58234682A700B60A48 /* CardsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF55234682A700B60A48 /* CardsRepository.swift */; };
+		DCC7FF5A2346843600B60A48 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF592346843600B60A48 /* ImageRepository.swift */; };
+		DCC7FF5C2346851300B60A48 /* ImageRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF5B2346851300B60A48 /* ImageRepositoryMock.swift */; };
+		DCC7FF5E234686AB00B60A48 /* ImageRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF5D234686AB00B60A48 /* ImageRepositorySpec.swift */; };
+		DCC7FF61234688D700B60A48 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF60234688D700B60A48 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		DCC7FF53234682A700B60A48 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		DCC7FF54234682A700B60A48 /* SetsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsRepository.swift; sourceTree = "<group>"; };
 		DCC7FF55234682A700B60A48 /* CardsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsRepository.swift; sourceTree = "<group>"; };
+		DCC7FF592346843600B60A48 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
+		DCC7FF5B2346851300B60A48 /* ImageRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepositoryMock.swift; sourceTree = "<group>"; };
+		DCC7FF5D234686AB00B60A48 /* ImageRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepositorySpec.swift; sourceTree = "<group>"; };
+		DCC7FF60234688D700B60A48 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		DCE13D572345223E00D2938A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		DCE13D582345223E00D2938A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,9 +144,11 @@
 		BDEA284023440A77002E4BEA /* RepositoriesTests */ = {
 			isa = PBXGroup;
 			children = (
+				DCC7FF5F234688B200B60A48 /* Helpers */,
 				DCC7FF482346828000B60A48 /* Mock */,
 				DCC7FF4C2346828000B60A48 /* CardsRepositorySpec.swift */,
 				DCC7FF442346828000B60A48 /* SetsRepositorySpec.swift */,
+				DCC7FF5D234686AB00B60A48 /* ImageRepositorySpec.swift */,
 				BDEA284323440A77002E4BEA /* Info.plist */,
 			);
 			path = RepositoriesTests;
@@ -147,9 +157,10 @@
 		DCC7FF482346828000B60A48 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				DCC7FF492346828000B60A48 /* SetsRepositoryMock.swift */,
 				DCC7FF4A2346828000B60A48 /* MockExpectedResult.swift */,
+				DCC7FF492346828000B60A48 /* SetsRepositoryMock.swift */,
 				DCC7FF4B2346828000B60A48 /* CardsRepositoryMock.swift */,
+				DCC7FF5B2346851300B60A48 /* ImageRepositoryMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -160,8 +171,17 @@
 				DCC7FF53234682A700B60A48 /* APIResponse.swift */,
 				DCC7FF54234682A700B60A48 /* SetsRepository.swift */,
 				DCC7FF55234682A700B60A48 /* CardsRepository.swift */,
+				DCC7FF592346843600B60A48 /* ImageRepository.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DCC7FF5F234688B200B60A48 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DCC7FF60234688D700B60A48 /* UIColor.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		DCE13D562345223E00D2938A /* Frameworks */ = {
@@ -355,6 +375,7 @@
 			files = (
 				DCC7FF57234682A700B60A48 /* SetsRepository.swift in Sources */,
 				DCC7FF58234682A700B60A48 /* CardsRepository.swift in Sources */,
+				DCC7FF5A2346843600B60A48 /* ImageRepository.swift in Sources */,
 				BDAFF44F23467BF1000256FF /* File.swift in Sources */,
 				DCC7FF56234682A700B60A48 /* APIResponse.swift in Sources */,
 			);
@@ -367,6 +388,9 @@
 				DCC7FF512346828000B60A48 /* CardsRepositorySpec.swift in Sources */,
 				DCC7FF502346828000B60A48 /* CardsRepositoryMock.swift in Sources */,
 				DCC7FF4D2346828000B60A48 /* SetsRepositorySpec.swift in Sources */,
+				DCC7FF5E234686AB00B60A48 /* ImageRepositorySpec.swift in Sources */,
+				DCC7FF5C2346851300B60A48 /* ImageRepositoryMock.swift in Sources */,
+				DCC7FF61234688D700B60A48 /* UIColor.swift in Sources */,
 				DCC7FF4F2346828000B60A48 /* MockExpectedResult.swift in Sources */,
 				DCC7FF4E2346828000B60A48 /* SetsRepositoryMock.swift in Sources */,
 			);

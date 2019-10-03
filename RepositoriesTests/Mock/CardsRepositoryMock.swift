@@ -28,7 +28,7 @@ class CardsRepositoryMock: CardsRepository {
         }
     }
 
-    func getCards(inSet setCode: String, atPage page: Int, completion: @escaping APIResponse<Card>) {
+    func getCards(inSet setCode: String, atPage page: Int, completion: @escaping APIResponse<[Card]>) {
         switch self.expectedResult {
         case .failure:
             completion(nil, self.error)

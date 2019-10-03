@@ -1,5 +1,5 @@
 //
-//  SetsRepositoryMock.swift
+//  ImageRepositoryMock.swift
 //  RepositoriesTests
 //
 //  Created by elton.faleta.santana on 03/10/19.
@@ -8,23 +8,25 @@
 
 @testable import Repositories
 import MTGSDKSwift
+import UIKit
 
-class SetsRepositoryMock: SetsRepository {
-    private var sets: [CardSet]?
+class ImageRepositoryMock: ImageRepository {
+
+    private var image: UIImage?
     private var error: NetworkError?
 
     init(expectedResult: MockExpectedResult) {
         switch expectedResult {
         case .success:
-            self.sets = Array(repeating: CardSet(), count: 10)
+            self.image = UIColor.blue.image()
             self.error = nil
         case .failure:
-            self.sets = nil
+            self.image = nil
             self.error = NetworkError.requestError(NSError(domain: "", code: 401, userInfo: nil))
         }
     }
 
-    func getAllSets(completion: @escaping APIResponse<[CardSet]>) {
-        completion(self.sets, self.error)
+    func getImage(forCard card: Card, completion: @escaping APIResponse<UIImage>) {
+        completion(self.image, self.error)
     }
 }

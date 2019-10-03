@@ -1,5 +1,5 @@
 //
-//  SetsRepository.swift
+//  ImageRepository.swift
 //  Repositories
 //
 //  Created by elton.faleta.santana on 03/10/19.
@@ -8,6 +8,6 @@
 
 import MTGSDKSwift
 
-public protocol SetsRepository {
-    func getAllSets(completion: @escaping APIResponse<[CardSet]>)
+public protocol ImageRepository {
+    func getImage(forCard card: Card, completion: @escaping APIResponse<UIImage>)
 }
