@@ -8,15 +8,16 @@
 
 @testable import Repositories
 import MTGSDKSwift
+import Entities
 
 class SetsRepositoryMock: SetsRepository {
-    private var sets: [CardSet]?
+    private var sets: [MagicCardSet]?
     private var error: NetworkError?
 
     init(expectedResult: MockExpectedResult) {
         switch expectedResult {
         case .success:
-            self.sets = Array(repeating: CardSet(), count: 10)
+            self.sets = Array(repeating: MagicCardSet(), count: 10)
             self.error = nil
         case .failure:
             self.sets = nil
@@ -24,7 +25,7 @@ class SetsRepositoryMock: SetsRepository {
         }
     }
 
-    func getAllSets(completion: @escaping APIResponse<[CardSet]>) {
+    func getAllSets(completion: @escaping APIResponse<[MagicCardSet]>) {
         completion(self.sets, self.error)
     }
 }

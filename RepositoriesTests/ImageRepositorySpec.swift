@@ -10,6 +10,7 @@
 import Quick
 import Nimble
 import MTGSDKSwift
+import Entities
 
 class ImageRepositorySpec: QuickSpec {
     override func spec() {
@@ -19,7 +20,7 @@ class ImageRepositorySpec: QuickSpec {
         describe("SetsRepository") {
             var image: UIImage?
             var error: NetworkError?
-            let card: Card = Card()
+            let card: MagicCard = MagicCard()
 
             context("when API is return properly") {
                 beforeEach {

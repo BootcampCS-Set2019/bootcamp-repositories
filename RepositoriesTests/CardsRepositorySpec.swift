@@ -10,13 +10,14 @@
 import Quick
 import Nimble
 import MTGSDKSwift
+import Entities
 
 class CardsRepositorySpec: QuickSpec {
     override func spec() {
         var cardsReposotory: CardsRepository!
 
         describe("CardsRepository") {
-            var cards: [Card]?
+            var cards: [MagicCard]?
             var error: NetworkError?
             let setCode: String = "COD"
             var page: Int = 1

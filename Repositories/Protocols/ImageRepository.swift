@@ -7,7 +7,8 @@
 //
 
 import MTGSDKSwift
+import Entities
 
 public protocol ImageRepository {
-    func getImage(forCard card: Card, completion: @escaping APIResponse<UIImage>)
+    func getImage(forCard card: MagicCard, completion: @escaping APIResponse<UIImage>)
 }
