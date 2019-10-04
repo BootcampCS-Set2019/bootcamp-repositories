@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BDAFF44F23467BF1000256FF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAFF44E23467BF1000256FF /* File.swift */; };
 		BDAFF45C23467C71000256FF /* MTGSDKSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAFF45723467C61000256FF /* MTGSDKSwift.framework */; };
 		BDEA283D23440A77002E4BEA /* Repositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEA283323440A76002E4BEA /* Repositories.framework */; };
 		BDEA284423440A77002E4BEA /* Repositories.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEA283623440A76002E4BEA /* Repositories.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,7 +56,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BDAFF44E23467BF1000256FF /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		BDAFF45023467C61000256FF /* MTGSDKSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MTGSDKSwift.xcodeproj; path = MTGSDKSwift/MTGSDKSwift.xcodeproj; sourceTree = "<group>"; };
 		BDEA283323440A76002E4BEA /* Repositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEA283623440A76002E4BEA /* Repositories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repositories.h; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				DCC7FF52234682A700B60A48 /* Protocols */,
 				BDEA283623440A76002E4BEA /* Repositories.h */,
 				BDEA283723440A76002E4BEA /* Info.plist */,
-				BDAFF44E23467BF1000256FF /* File.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -376,7 +373,6 @@
 				DCC7FF57234682A700B60A48 /* SetsRepository.swift in Sources */,
 				DCC7FF58234682A700B60A48 /* CardsRepository.swift in Sources */,
 				DCC7FF5A2346843600B60A48 /* ImageRepository.swift in Sources */,
-				BDAFF44F23467BF1000256FF /* File.swift in Sources */,
 				DCC7FF56234682A700B60A48 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
