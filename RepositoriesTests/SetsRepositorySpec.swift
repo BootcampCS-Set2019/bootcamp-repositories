@@ -10,6 +10,7 @@
 import Quick
 import Nimble
 import MTGSDKSwift
+import Entities
 
 class SetsRepositorySpec: QuickSpec {
     override func spec() {
@@ -17,7 +18,7 @@ class SetsRepositorySpec: QuickSpec {
         var setsRepository: SetsRepository!
 
         describe("SetsRepository") {
-            var cardSets: [CardSet]?
+            var cardSets: [MagicCardSet]?
             var error: NetworkError?
 
             context("when API is return properly") {

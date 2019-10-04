@@ -7,7 +7,8 @@
 //
 
 import MTGSDKSwift
+import Entities
 
 public protocol CardsRepository {
-    func getCards(inSet setCode: String, atPage page: Int, completion: @escaping APIResponse<[Card]>)
+    func getCards(inSet setCode: String, atPage page: Int, completion: @escaping APIResponse<[MagicCard]>)
 }

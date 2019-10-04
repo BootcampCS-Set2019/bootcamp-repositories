@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BDAFF44F23467BF1000256FF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAFF44E23467BF1000256FF /* File.swift */; };
+		BD1C96B52346DDF90088B6A7 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1C96B42346DDF90088B6A7 /* Entities.framework */; };
 		BDAFF45C23467C71000256FF /* MTGSDKSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAFF45723467C61000256FF /* MTGSDKSwift.framework */; };
 		BDEA283D23440A77002E4BEA /* Repositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEA283323440A76002E4BEA /* Repositories.framework */; };
 		BDEA284423440A77002E4BEA /* Repositories.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEA283623440A76002E4BEA /* Repositories.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BDAFF44E23467BF1000256FF /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		BD1C96B42346DDF90088B6A7 /* Entities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Entities.framework; path = Carthage/Build/iOS/Entities.framework; sourceTree = "<group>"; };
 		BDAFF45023467C61000256FF /* MTGSDKSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MTGSDKSwift.xcodeproj; path = MTGSDKSwift/MTGSDKSwift.xcodeproj; sourceTree = "<group>"; };
 		BDEA283323440A76002E4BEA /* Repositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEA283623440A76002E4BEA /* Repositories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repositories.h; sourceTree = "<group>"; };
@@ -86,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDAFF45C23467C71000256FF /* MTGSDKSwift.framework in Frameworks */,
+				BD1C96B52346DDF90088B6A7 /* Entities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +137,6 @@
 				DCC7FF52234682A700B60A48 /* Protocols */,
 				BDEA283623440A76002E4BEA /* Repositories.h */,
 				BDEA283723440A76002E4BEA /* Info.plist */,
-				BDAFF44E23467BF1000256FF /* File.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -187,6 +187,7 @@
 		DCE13D562345223E00D2938A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD1C96B42346DDF90088B6A7 /* Entities.framework */,
 				DCE13D572345223E00D2938A /* Nimble.framework */,
 				DCE13D582345223E00D2938A /* Quick.framework */,
 			);
@@ -215,7 +216,8 @@
 				BDEA282F23440A76002E4BEA /* Sources */,
 				BDEA283023440A76002E4BEA /* Frameworks */,
 				BDEA283123440A76002E4BEA /* Resources */,
-				BDEA284D23440A86002E4BEA /* ShellScript */,
+				BDEA284D23440A86002E4BEA /* Run Script */,
+				BD1C96B02346DDB80088B6A7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -330,6 +332,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BD1C96B02346DDB80088B6A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Entities.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Entities.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		BDB7E9D5234540E2002FB416 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +361,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Entities.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -349,7 +371,7 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		BDEA284D23440A86002E4BEA /* ShellScript */ = {
+		BDEA284D23440A86002E4BEA /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,6 +380,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -376,7 +399,6 @@
 				DCC7FF57234682A700B60A48 /* SetsRepository.swift in Sources */,
 				DCC7FF58234682A700B60A48 /* CardsRepository.swift in Sources */,
 				DCC7FF5A2346843600B60A48 /* ImageRepository.swift in Sources */,
-				BDAFF44F23467BF1000256FF /* File.swift in Sources */,
 				DCC7FF56234682A700B60A48 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,8 @@
 //
 
 import MTGSDKSwift
+import Entities
 
 public protocol SetsRepository {
-    func getAllSets(completion: @escaping APIResponse<[CardSet]>)
+    func getAllSets(completion: @escaping APIResponse<[MagicCardSet]>)
 }

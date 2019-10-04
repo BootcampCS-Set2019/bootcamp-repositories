@@ -9,6 +9,7 @@
 @testable import Repositories
 import MTGSDKSwift
 import UIKit
+import Entities
 
 class ImageRepositoryMock: ImageRepository {
 
@@ -26,7 +27,7 @@ class ImageRepositoryMock: ImageRepository {
         }
     }
 
-    func getImage(forCard card: Card, completion: @escaping APIResponse<UIImage>) {
+    func getImage(forCard card: MagicCard, completion: @escaping APIResponse<UIImage>) {
         completion(self.image, self.error)
     }
 }
