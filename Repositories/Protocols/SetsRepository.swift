@@ -6,7 +6,6 @@
 //  Copyright © 2019 BootcampCS-Set2019. All rights reserved.
 //
 
-import MTGSDKSwift
 import Entities
 
 public protocol SetsRepository {

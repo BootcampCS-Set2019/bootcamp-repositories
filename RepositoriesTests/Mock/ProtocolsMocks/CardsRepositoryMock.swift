@@ -21,7 +21,7 @@ class CardsRepositoryMock: CardsRepository {
         self.expectedResult = expectedResult
         switch self.expectedResult {
         case .success:
-            self.cards = Array(repeating: MagicCard(), count: 130)
+            self.cards = Array(repeating: MagicCard(name: "", imageUrl: "", id: ""), count: 130)
             self.error = nil
         case .failure:
             self.cards = nil
