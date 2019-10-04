@@ -11,6 +11,8 @@ import Entities
 
 public class MTGSDKDataProvider {
     var magic = Magic()
+
+    public init() {}
 }
 
 extension MTGSDKDataProvider: SetsRepository {
