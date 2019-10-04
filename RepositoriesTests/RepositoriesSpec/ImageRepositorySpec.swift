@@ -20,7 +20,7 @@ class ImageRepositorySpec: QuickSpec {
         describe("SetsRepository") {
             var image: UIImage?
             var error: NetworkError?
-            let card: MagicCard = MagicCard()
+            let card: MagicCard = MagicCard(name: "", imageUrl: "", id: "")
 
             context("when API is return properly") {
                 beforeEach {

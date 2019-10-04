@@ -17,7 +17,7 @@ class SetsRepositoryMock: SetsRepository {
     init(expectedResult: MockExpectedResult) {
         switch expectedResult {
         case .success:
-            self.sets = Array(repeating: MagicCardSet(), count: 10)
+            self.sets = Array(repeating: MagicCardSet(code: "", name: ""), count: 10)
             self.error = nil
         case .failure:
             self.sets = nil
