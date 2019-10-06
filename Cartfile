@@ -1,2 +1,3 @@
 github "https://github.com/BootcampCS-Set2019/bootcamp-entities.git" "rx_master"
 github "ReactiveX/RxSwift" ~> 5.0
+github "RxSwiftCommunity/RxDataSources" ~> 4.0
