@@ -21,8 +21,10 @@ public protocol MagicAPIProtocol {
     func send<T: Codable>(path: PathType, method: RequestType, parameters: [String: String]) -> Observable<T>
 }
 
-class MagicAPI: MagicAPIProtocol {
+public class MagicAPI: MagicAPIProtocol {
     private let baseURL = "https://api.magicthegathering.io/v1/"
+
+    public init() {}
 
     private func buildRequest(path: PathType,
                               method: RequestType,
@@ -42,9 +44,9 @@ class MagicAPI: MagicAPIProtocol {
         return request
     }
 
-    func send<T: Codable>(path: PathType,
-                          method: RequestType,
-                          parameters: [String: String] = ["": ""]) -> Observable<T> {
+    public func send<T: Codable>(path: PathType,
+                                 method: RequestType,
+                                 parameters: [String: String] = ["": ""]) -> Observable<T> {
 
         return Observable<T>.create { [unowned self] observer in
             let request = self.buildRequest(path: path, method: method, parameters: parameters)
