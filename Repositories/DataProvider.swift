@@ -23,7 +23,7 @@ extension DataProvider: SetsRepository {
 }
 
 extension DataProvider: TypesRepository {
-    func getAllTypes() -> Observable<CardTypes> {
+    public func getAllTypes() -> Observable<CardTypes> {
         return api.send(path: .types, method: .GET, parameters: [:])
     }
 }

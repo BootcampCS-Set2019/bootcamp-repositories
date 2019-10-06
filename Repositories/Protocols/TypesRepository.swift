@@ -9,6 +9,6 @@
 import RxSwift
 import Entities
 
-protocol TypesRepository {
+public protocol TypesRepository {
     func getAllTypes() -> Observable<CardTypes>
 }
