@@ -11,7 +11,7 @@ import RxSwift
 public class DataProvider {
     private let api: MagicAPIProtocol
 
-    public init(api: MagicAPIProtocol) {
+    public init(api: MagicAPIProtocol = MagicAPI()) {
         self.api = api
     }
 }
