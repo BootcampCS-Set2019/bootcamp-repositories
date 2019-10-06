@@ -1,1 +1,2 @@
-github "https://github.com/BootcampCS-Set2019/bootcamp-entities.git" "master"
+github "https://github.com/BootcampCS-Set2019/bootcamp-entities.git" "rx_master"
+github "ReactiveX/RxSwift" ~> 5.0

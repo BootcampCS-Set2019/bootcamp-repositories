@@ -7,7 +7,8 @@
 //
 
 import Entities
+import RxSwift
 
 public protocol SetsRepository {
-    func getAllSets(completion: @escaping APIResponse<[MagicCardSet]>)
+    func getAllSets() -> Observable<CardSets>
 }
