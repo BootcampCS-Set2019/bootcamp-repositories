@@ -7,8 +7,7 @@
 //
 
 import Entities
-import RxSwift
 
 public protocol SetsRepository {
-    func getAllSets() -> Observable<CardSets>
+    func getAllSets() -> Future<CardSets, APIError>
 }

@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		BD1C96B52346DDF90088B6A7 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1C96B42346DDF90088B6A7 /* Entities.framework */; };
-		BDA312C123495E78005E2F84 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA312C023495E78005E2F84 /* RxSwift.framework */; };
 		BDA312C323495ECE005E2F84 /* TypesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA312C223495ECE005E2F84 /* TypesRepository.swift */; };
-		BDA312C62349FE91005E2F84 /* MagicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA312C52349FE91005E2F84 /* MagicAPI.swift */; };
+		BDA312C62349FE91005E2F84 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA312C52349FE91005E2F84 /* API.swift */; };
 		BDA312C8234A0654005E2F84 /* MagicAPISpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA312C7234A0654005E2F84 /* MagicAPISpy.swift */; };
+		BDA31342234CCD24005E2F84 /* Futures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA31341234CCD24005E2F84 /* Futures.swift */; };
+		BDA31344234CCD69005E2F84 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA31343234CCD69005E2F84 /* Future.swift */; };
+		BDA31346234CCD8A005E2F84 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA31345234CCD8A005E2F84 /* APIError.swift */; };
 		BDEA283D23440A77002E4BEA /* Repositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEA283323440A76002E4BEA /* Repositories.framework */; };
 		BDEA284423440A77002E4BEA /* Repositories.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEA283623440A76002E4BEA /* Repositories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCC7FF57234682A700B60A48 /* SetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF54234682A700B60A48 /* SetsRepository.swift */; };
@@ -34,8 +36,11 @@
 		BD1C96B42346DDF90088B6A7 /* Entities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Entities.framework; path = Carthage/Build/iOS/Entities.framework; sourceTree = "<group>"; };
 		BDA312C023495E78005E2F84 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		BDA312C223495ECE005E2F84 /* TypesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesRepository.swift; sourceTree = "<group>"; };
-		BDA312C52349FE91005E2F84 /* MagicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPI.swift; sourceTree = "<group>"; };
+		BDA312C52349FE91005E2F84 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		BDA312C7234A0654005E2F84 /* MagicAPISpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPISpy.swift; sourceTree = "<group>"; };
+		BDA31341234CCD24005E2F84 /* Futures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Futures.swift; sourceTree = "<group>"; };
+		BDA31343234CCD69005E2F84 /* Future.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		BDA31345234CCD8A005E2F84 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		BDEA283323440A76002E4BEA /* Repositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEA283623440A76002E4BEA /* Repositories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repositories.h; sourceTree = "<group>"; };
 		BDEA283723440A76002E4BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,7 +60,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD1C96B52346DDF90088B6A7 /* Entities.framework in Frameworks */,
-				BDA312C123495E78005E2F84 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,9 +77,19 @@
 		BDA312C42349FE81005E2F84 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				BDA312C52349FE91005E2F84 /* MagicAPI.swift */,
+				BDA31345234CCD8A005E2F84 /* APIError.swift */,
+				BDA312C52349FE91005E2F84 /* API.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		BDA31340234CCD19005E2F84 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BDA31341234CCD24005E2F84 /* Futures.swift */,
+				BDA31343234CCD69005E2F84 /* Future.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		BDEA282923440A76002E4BEA = {
@@ -100,6 +114,7 @@
 		BDEA283523440A76002E4BEA /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				BDA31340234CCD19005E2F84 /* Utils */,
 				BDA312C42349FE81005E2F84 /* Network */,
 				DCC7FF52234682A700B60A48 /* Protocols */,
 				BDEA283623440A76002E4BEA /* Repositories.h */,
@@ -266,13 +281,11 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Entities.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Entities.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -289,7 +302,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Entities.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -325,9 +337,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC7FF57234682A700B60A48 /* SetsRepository.swift in Sources */,
+				BDA31342234CCD24005E2F84 /* Futures.swift in Sources */,
+				BDA31344234CCD69005E2F84 /* Future.swift in Sources */,
 				DCC7FF58234682A700B60A48 /* CardsRepository.swift in Sources */,
 				BDA312C323495ECE005E2F84 /* TypesRepository.swift in Sources */,
-				BDA312C62349FE91005E2F84 /* MagicAPI.swift in Sources */,
+				BDA312C62349FE91005E2F84 /* API.swift in Sources */,
+				BDA31346234CCD8A005E2F84 /* APIError.swift in Sources */,
 				DCC7FF6B2347749500B60A48 /* DataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,7 +504,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/MTGSDKSwift",
 				);
 				INFOPLIST_FILE = Repositories/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -522,7 +536,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/MTGSDKSwift",
 				);
 				INFOPLIST_FILE = Repositories/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

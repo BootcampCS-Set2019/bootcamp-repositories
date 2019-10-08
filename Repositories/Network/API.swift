@@ -17,11 +17,14 @@ public enum PathType: String {
     case cards, sets, types
 }
 
-public protocol MagicAPIProtocol {
-    func send<T: Codable>(path: PathType, method: RequestType, parameters: [String: String]) -> Observable<T>
+public protocol APIProtocol {
+    func send<T: Codable>(path: PathType,
+                          method: RequestType,
+                          parameters: [String: String]) -> Future<T, APIError>
 }
 
-public class API: MagicAPIProtocol {
+public class API: APIProtocol {
+
     private let baseURL = "https://api.magicthegathering.io/v1/"
 
     public init() {}
@@ -34,7 +37,7 @@ public class API: MagicAPIProtocol {
             fatalError("Invalid URL")
         }
 
-        components.queryItems = parameters.map { (key, value) in
+        components.queryItems = parameters.map { key, value in
             URLQueryItem(name: key, value: value)
         }
 
@@ -44,27 +47,24 @@ public class API: MagicAPIProtocol {
         return request
     }
 
-    public func send<T: Codable>(path: PathType,
-                                 method: RequestType,
-                                 parameters: [String: String] = ["": ""]) -> Observable<T> {
+    public func send<T>(path: PathType,
+                        method: RequestType,
+                        parameters: [String: String]) -> Future<T, APIError>
+        where T: Decodable, T: Encodable {
 
-        return Observable<T>.create { [unowned self] observer in
-            let request = self.buildRequest(path: path, method: method, parameters: parameters)
+        return Future { future in
+            let request = buildRequest(path: path, method: method, parameters: parameters)
 
-            let task = URLSession.shared.dataTask(with: request) { (data, _, error) in
+            let task = URLSession.shared.dataTask(with: request) { data, _, _ in
                 do {
                     let model: T = try JSONDecoder().decode(T.self, from: data ?? Data())
-                    observer.onNext(model)
-                } catch let error {
-                    observer.onError(error)
+                    future.resolve(value: model)
+                } catch {
+                    future.reject(error: APIError.unavailable)
                 }
-                observer.onCompleted()
             }
-            task.resume()
 
-            return Disposables.create {
-                task.cancel()
-            }
+            task.resume()
         }
     }
 }

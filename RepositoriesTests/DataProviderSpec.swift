@@ -10,17 +10,16 @@
 import Quick
 import Nimble
 import Entities
-import RxSwift
 
 class DataProviderSpec: QuickSpec {
     override func spec() {
         describe("DataProvider") {
 
             var dataProvider: DataProvider!
-            var mock: MagicAPISpy!
+            var mock: APISpy!
 
             beforeEach {
-                mock = MagicAPISpy()
+                mock = APISpy()
                 dataProvider = DataProvider(api: mock)
             }
 

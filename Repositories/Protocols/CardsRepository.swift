@@ -9,5 +9,5 @@ import Entities
 import RxSwift
 
 public protocol CardsRepository {
-    func getCards(of type: String, in set: CardSet, at page: Int) -> Observable<Cards>
+    func getCards(of type: String, in set: CardSet, at page: Int) -> Future<Cards, APIError>
 }
