@@ -60,7 +60,7 @@ public enum Futures {
      successful if all of the original futures are
      successful. This method makes no assumption about order or thread delivery.
      */
-    public static func all<T, E: Error>(_ futures: [Future<T, E>]) ->
+    public static func all<T: Any, E: Error>(_ futures: [Future<T, E>]) ->
         Future<Future<T, E>.ResultCollection,
         Future<T, E>.ErrorCollection> {
         return Future { resolver in
@@ -95,7 +95,7 @@ public enum Futures {
      successful. This method makes no assumption about order or thread delivery.
      */
 
-    public static func any<T, E: Error>(_ futures: [Future<T, E>]) ->
+    public static func any<T: Any, E: Error>(_ futures: [Future<T, E>]) ->
         Future<Future<T, E>.ResultCollection,
         Future<T, E>.ErrorCollection> {
         return Future { resolver in
@@ -131,7 +131,7 @@ public enum Futures {
      the passed array will be used.
      */
 
-    public static func first<T, E: Error>(_ futures: [Future<T, E>]) -> Future<T, E> {
+    public static func first<T: Any, E: Error>(_ futures: [Future<T, E>]) -> Future<T, E> {
         return Future { resolver in
             // Safe due to the feature that calling resolve on a resolved Future's resolver is, basically, a no-op
             futures.forEach { future in
