@@ -19,7 +19,7 @@ import Foundation
  around, the Resolver shouldn't be.
  */
 
-public final class Future<T: Any, E: Error> {
+public final class Future<T, E: Error> {
     public typealias Value = T
     public typealias Error = E
 
