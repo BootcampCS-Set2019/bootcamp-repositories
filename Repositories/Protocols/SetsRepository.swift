@@ -9,5 +9,5 @@
 import Entities
 
 public protocol SetsRepository {
-    func getAllSets(completion: @escaping APIResponse<[MagicCardSet]>)
+    func getAllSets() -> Future<CardSets, APIError>
 }

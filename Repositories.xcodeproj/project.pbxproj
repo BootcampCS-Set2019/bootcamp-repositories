@@ -8,47 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		BD1C96B52346DDF90088B6A7 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1C96B42346DDF90088B6A7 /* Entities.framework */; };
-		BDAFF45C23467C71000256FF /* MTGSDKSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAFF45723467C61000256FF /* MTGSDKSwift.framework */; };
+		BDA312C323495ECE005E2F84 /* TypesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA312C223495ECE005E2F84 /* TypesRepository.swift */; };
+		BDA312C62349FE91005E2F84 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA312C52349FE91005E2F84 /* API.swift */; };
+		BDA312C8234A0654005E2F84 /* MagicAPISpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA312C7234A0654005E2F84 /* MagicAPISpy.swift */; };
+		BDA31342234CCD24005E2F84 /* Futures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA31341234CCD24005E2F84 /* Futures.swift */; };
+		BDA31344234CCD69005E2F84 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA31343234CCD69005E2F84 /* Future.swift */; };
+		BDA31346234CCD8A005E2F84 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA31345234CCD8A005E2F84 /* APIError.swift */; };
 		BDEA283D23440A77002E4BEA /* Repositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEA283323440A76002E4BEA /* Repositories.framework */; };
 		BDEA284423440A77002E4BEA /* Repositories.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEA283623440A76002E4BEA /* Repositories.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCC7FF4D2346828000B60A48 /* SetsRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF442346828000B60A48 /* SetsRepositorySpec.swift */; };
-		DCC7FF4E2346828000B60A48 /* SetsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF492346828000B60A48 /* SetsRepositoryMock.swift */; };
-		DCC7FF4F2346828000B60A48 /* MockExpectedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF4A2346828000B60A48 /* MockExpectedResult.swift */; };
-		DCC7FF502346828000B60A48 /* CardsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF4B2346828000B60A48 /* CardsRepositoryMock.swift */; };
-		DCC7FF512346828000B60A48 /* CardsRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF4C2346828000B60A48 /* CardsRepositorySpec.swift */; };
-		DCC7FF56234682A700B60A48 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF53234682A700B60A48 /* APIResponse.swift */; };
 		DCC7FF57234682A700B60A48 /* SetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF54234682A700B60A48 /* SetsRepository.swift */; };
 		DCC7FF58234682A700B60A48 /* CardsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF55234682A700B60A48 /* CardsRepository.swift */; };
-		DCC7FF5A2346843600B60A48 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF592346843600B60A48 /* ImageRepository.swift */; };
-		DCC7FF5C2346851300B60A48 /* ImageRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF5B2346851300B60A48 /* ImageRepositoryMock.swift */; };
-		DCC7FF5E234686AB00B60A48 /* ImageRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF5D234686AB00B60A48 /* ImageRepositorySpec.swift */; };
-		DCC7FF61234688D700B60A48 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF60234688D700B60A48 /* UIColor.swift */; };
-		DCC7FF6B2347749500B60A48 /* MTGSDKDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF6A2347749500B60A48 /* MTGSDKDataProvider.swift */; };
-		DCC7FF6D23477D5F00B60A48 /* MTGSDKDataProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF6C23477D5F00B60A48 /* MTGSDKDataProviderSpec.swift */; };
+		DCC7FF6B2347749500B60A48 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF6A2347749500B60A48 /* DataProvider.swift */; };
+		DCC7FF6D23477D5F00B60A48 /* DataProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF6C23477D5F00B60A48 /* DataProviderSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BDAFF45623467C61000256FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDAFF45023467C61000256FF /* MTGSDKSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5BD04DA91E64943C00E5ED27;
-			remoteInfo = MTGSDKSwift;
-		};
-		BDAFF45823467C61000256FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDAFF45023467C61000256FF /* MTGSDKSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5BD04DB21E64943C00E5ED27;
-			remoteInfo = MTGSDKSwiftTests;
-		};
-		BDAFF45A23467C61000256FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDAFF45023467C61000256FF /* MTGSDKSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5B87D68420596D6B0098553C;
-			remoteInfo = TestApplication;
-		};
 		BDEA283E23440A77002E4BEA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BDEA282A23440A76002E4BEA /* Project object */;
@@ -60,26 +34,22 @@
 
 /* Begin PBXFileReference section */
 		BD1C96B42346DDF90088B6A7 /* Entities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Entities.framework; path = Carthage/Build/iOS/Entities.framework; sourceTree = "<group>"; };
-		BDAFF45023467C61000256FF /* MTGSDKSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MTGSDKSwift.xcodeproj; path = MTGSDKSwift/MTGSDKSwift.xcodeproj; sourceTree = "<group>"; };
+		BDA312C023495E78005E2F84 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		BDA312C223495ECE005E2F84 /* TypesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesRepository.swift; sourceTree = "<group>"; };
+		BDA312C52349FE91005E2F84 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BDA312C7234A0654005E2F84 /* MagicAPISpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPISpy.swift; sourceTree = "<group>"; };
+		BDA31341234CCD24005E2F84 /* Futures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Futures.swift; sourceTree = "<group>"; };
+		BDA31343234CCD69005E2F84 /* Future.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		BDA31345234CCD8A005E2F84 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		BDEA283323440A76002E4BEA /* Repositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEA283623440A76002E4BEA /* Repositories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repositories.h; sourceTree = "<group>"; };
 		BDEA283723440A76002E4BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDEA283C23440A77002E4BEA /* RepositoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEA284323440A77002E4BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCC7FF442346828000B60A48 /* SetsRepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsRepositorySpec.swift; sourceTree = "<group>"; };
-		DCC7FF492346828000B60A48 /* SetsRepositoryMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsRepositoryMock.swift; sourceTree = "<group>"; };
-		DCC7FF4A2346828000B60A48 /* MockExpectedResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockExpectedResult.swift; sourceTree = "<group>"; };
-		DCC7FF4B2346828000B60A48 /* CardsRepositoryMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsRepositoryMock.swift; sourceTree = "<group>"; };
-		DCC7FF4C2346828000B60A48 /* CardsRepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsRepositorySpec.swift; sourceTree = "<group>"; };
-		DCC7FF53234682A700B60A48 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		DCC7FF54234682A700B60A48 /* SetsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsRepository.swift; sourceTree = "<group>"; };
 		DCC7FF55234682A700B60A48 /* CardsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsRepository.swift; sourceTree = "<group>"; };
-		DCC7FF592346843600B60A48 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
-		DCC7FF5B2346851300B60A48 /* ImageRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepositoryMock.swift; sourceTree = "<group>"; };
-		DCC7FF5D234686AB00B60A48 /* ImageRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepositorySpec.swift; sourceTree = "<group>"; };
-		DCC7FF60234688D700B60A48 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		DCC7FF6A2347749500B60A48 /* MTGSDKDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSDKDataProvider.swift; sourceTree = "<group>"; };
-		DCC7FF6C23477D5F00B60A48 /* MTGSDKDataProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSDKDataProviderSpec.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		DCC7FF6A2347749500B60A48 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		DCC7FF6C23477D5F00B60A48 /* DataProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderSpec.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		DCE13D572345223E00D2938A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		DCE13D582345223E00D2938A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDAFF45C23467C71000256FF /* MTGSDKSwift.framework in Frameworks */,
 				BD1C96B52346DDF90088B6A7 /* Entities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,20 +74,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BDAFF45123467C61000256FF /* Products */ = {
+		BDA312C42349FE81005E2F84 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				BDAFF45723467C61000256FF /* MTGSDKSwift.framework */,
-				BDAFF45923467C61000256FF /* MTGSDKSwiftTests.xctest */,
-				BDAFF45B23467C61000256FF /* TestApplication.app */,
+				BDA31345234CCD8A005E2F84 /* APIError.swift */,
+				BDA312C52349FE91005E2F84 /* API.swift */,
 			);
-			name = Products;
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BDA31340234CCD19005E2F84 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BDA31341234CCD24005E2F84 /* Futures.swift */,
+				BDA31343234CCD69005E2F84 /* Future.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		BDEA282923440A76002E4BEA = {
 			isa = PBXGroup;
 			children = (
-				BDAFF45023467C61000256FF /* MTGSDKSwift.xcodeproj */,
 				BDEA283523440A76002E4BEA /* Repositories */,
 				BDEA284023440A77002E4BEA /* RepositoriesTests */,
 				BDEA283423440A76002E4BEA /* Products */,
@@ -138,10 +114,12 @@
 		BDEA283523440A76002E4BEA /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				BDA31340234CCD19005E2F84 /* Utils */,
+				BDA312C42349FE81005E2F84 /* Network */,
 				DCC7FF52234682A700B60A48 /* Protocols */,
 				BDEA283623440A76002E4BEA /* Repositories.h */,
 				BDEA283723440A76002E4BEA /* Info.plist */,
-				DCC7FF6A2347749500B60A48 /* MTGSDKDataProvider.swift */,
+				DCC7FF6A2347749500B60A48 /* DataProvider.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -149,66 +127,35 @@
 		BDEA284023440A77002E4BEA /* RepositoriesTests */ = {
 			isa = PBXGroup;
 			children = (
-				DCC7FF5F234688B200B60A48 /* Helpers */,
-				DCC7FF482346828000B60A48 /* Mock */,
-				DCC7FF6E23477E9400B60A48 /* RepositoriesSpec */,
-				DCC7FF6C23477D5F00B60A48 /* MTGSDKDataProviderSpec.swift */,
+				DCC7FF482346828000B60A48 /* Spy */,
+				DCC7FF6C23477D5F00B60A48 /* DataProviderSpec.swift */,
 				BDEA284323440A77002E4BEA /* Info.plist */,
 			);
 			path = RepositoriesTests;
 			sourceTree = "<group>";
 		};
-		DCC7FF482346828000B60A48 /* Mock */ = {
+		DCC7FF482346828000B60A48 /* Spy */ = {
 			isa = PBXGroup;
 			children = (
-				DCC7FF6F234786CD00B60A48 /* ProtocolsMocks */,
+				BDA312C7234A0654005E2F84 /* MagicAPISpy.swift */,
 			);
-			path = Mock;
+			path = Spy;
 			sourceTree = "<group>";
 		};
 		DCC7FF52234682A700B60A48 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				DCC7FF53234682A700B60A48 /* APIResponse.swift */,
+				BDA312C223495ECE005E2F84 /* TypesRepository.swift */,
 				DCC7FF54234682A700B60A48 /* SetsRepository.swift */,
 				DCC7FF55234682A700B60A48 /* CardsRepository.swift */,
-				DCC7FF592346843600B60A48 /* ImageRepository.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		DCC7FF5F234688B200B60A48 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				DCC7FF60234688D700B60A48 /* UIColor.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		DCC7FF6E23477E9400B60A48 /* RepositoriesSpec */ = {
-			isa = PBXGroup;
-			children = (
-				DCC7FF4C2346828000B60A48 /* CardsRepositorySpec.swift */,
-				DCC7FF442346828000B60A48 /* SetsRepositorySpec.swift */,
-				DCC7FF5D234686AB00B60A48 /* ImageRepositorySpec.swift */,
-			);
-			path = RepositoriesSpec;
-			sourceTree = "<group>";
-		};
-		DCC7FF6F234786CD00B60A48 /* ProtocolsMocks */ = {
-			isa = PBXGroup;
-			children = (
-				DCC7FF4A2346828000B60A48 /* MockExpectedResult.swift */,
-				DCC7FF492346828000B60A48 /* SetsRepositoryMock.swift */,
-				DCC7FF4B2346828000B60A48 /* CardsRepositoryMock.swift */,
-				DCC7FF5B2346851300B60A48 /* ImageRepositoryMock.swift */,
-			);
-			path = ProtocolsMocks;
 			sourceTree = "<group>";
 		};
 		DCE13D562345223E00D2938A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDA312C023495E78005E2F84 /* RxSwift.framework */,
 				BD1C96B42346DDF90088B6A7 /* Entities.framework */,
 				DCE13D572345223E00D2938A /* Nimble.framework */,
 				DCE13D582345223E00D2938A /* Quick.framework */,
@@ -294,16 +241,11 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = BDEA282923440A76002E4BEA;
 			productRefGroup = BDEA283423440A76002E4BEA /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = BDAFF45123467C61000256FF /* Products */;
-					ProjectRef = BDAFF45023467C61000256FF /* MTGSDKSwift.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				BDEA283223440A76002E4BEA /* Repositories */,
@@ -311,30 +253,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		BDAFF45723467C61000256FF /* MTGSDKSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MTGSDKSwift.framework;
-			remoteRef = BDAFF45623467C61000256FF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BDAFF45923467C61000256FF /* MTGSDKSwiftTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MTGSDKSwiftTests.xctest;
-			remoteRef = BDAFF45823467C61000256FF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BDAFF45B23467C61000256FF /* TestApplication.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TestApplication.app;
-			remoteRef = BDAFF45A23467C61000256FF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BDEA283123440A76002E4BEA /* Resources */ = {
@@ -419,10 +337,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC7FF57234682A700B60A48 /* SetsRepository.swift in Sources */,
+				BDA31342234CCD24005E2F84 /* Futures.swift in Sources */,
+				BDA31344234CCD69005E2F84 /* Future.swift in Sources */,
 				DCC7FF58234682A700B60A48 /* CardsRepository.swift in Sources */,
-				DCC7FF5A2346843600B60A48 /* ImageRepository.swift in Sources */,
-				DCC7FF56234682A700B60A48 /* APIResponse.swift in Sources */,
-				DCC7FF6B2347749500B60A48 /* MTGSDKDataProvider.swift in Sources */,
+				BDA312C323495ECE005E2F84 /* TypesRepository.swift in Sources */,
+				BDA312C62349FE91005E2F84 /* API.swift in Sources */,
+				BDA31346234CCD8A005E2F84 /* APIError.swift in Sources */,
+				DCC7FF6B2347749500B60A48 /* DataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,15 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC7FF512346828000B60A48 /* CardsRepositorySpec.swift in Sources */,
-				DCC7FF502346828000B60A48 /* CardsRepositoryMock.swift in Sources */,
-				DCC7FF4D2346828000B60A48 /* SetsRepositorySpec.swift in Sources */,
-				DCC7FF6D23477D5F00B60A48 /* MTGSDKDataProviderSpec.swift in Sources */,
-				DCC7FF5E234686AB00B60A48 /* ImageRepositorySpec.swift in Sources */,
-				DCC7FF5C2346851300B60A48 /* ImageRepositoryMock.swift in Sources */,
-				DCC7FF61234688D700B60A48 /* UIColor.swift in Sources */,
-				DCC7FF4F2346828000B60A48 /* MockExpectedResult.swift in Sources */,
-				DCC7FF4E2346828000B60A48 /* SetsRepositoryMock.swift in Sources */,
+				DCC7FF6D23477D5F00B60A48 /* DataProviderSpec.swift in Sources */,
+				BDA312C8234A0654005E2F84 /* MagicAPISpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +504,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/MTGSDKSwift",
 				);
 				INFOPLIST_FILE = Repositories/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -623,7 +536,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/MTGSDKSwift",
 				);
 				INFOPLIST_FILE = Repositories/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
