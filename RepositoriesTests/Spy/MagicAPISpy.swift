@@ -7,7 +7,6 @@
 //
 
 @testable import Repositories
-import RxSwift
 
 class APISpy: APIProtocol {
     var invokedSend = false

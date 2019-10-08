@@ -34,6 +34,7 @@ extension DataProvider: CardsRepository {
         params["type"] = type
         params["set"] = set.code
         params["page"] = String(page)
+
         return api.send(path: .cards, method: .GET, parameters: params)
     }
 }
