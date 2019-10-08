@@ -9,6 +9,7 @@
 @testable import Repositories
 
 class APISpy: APIProtocol {
+
     var invokedSend = false
     var invokedSendCount = 0
     // swiftlint:disable:next large_tuple
