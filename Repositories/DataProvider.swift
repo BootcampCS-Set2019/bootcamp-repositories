@@ -6,7 +6,6 @@
 //  Copyright © 2019 BootcampCS-Set2019. All rights reserved.
 //
 import Entities
-import RxSwift
 
 public class DataProvider {
     private let api: APIProtocol

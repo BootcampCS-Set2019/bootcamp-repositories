@@ -7,7 +7,6 @@
 //
 
 import Entities
-import RxSwift
 
 public enum RequestType: String {
     case GET, POST, PUT, DELETE
