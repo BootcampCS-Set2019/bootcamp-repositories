@@ -11,7 +11,7 @@ import RxSwift
 public class DataProvider {
     private let api: APIProtocol
 
-    public init(api: APIProtocol = API()) {
+    public init(api: APIProtocol = API(session: URLSession.shared)) {
         self.api = api
     }
 }

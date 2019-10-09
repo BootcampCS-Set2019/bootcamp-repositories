@@ -27,7 +27,11 @@ public class API: APIProtocol {
 
     private let baseURL = "https://api.magicthegathering.io/v1/"
 
-    public init() {}
+    private let session: URLSessionProtocol
+
+    public init(session: URLSessionProtocol) {
+        self.session = session
+    }
 
     private func buildRequest(path: PathType,
                               method: RequestType,
@@ -54,8 +58,7 @@ public class API: APIProtocol {
 
         return Future { future in
             let request = buildRequest(path: path, method: method, parameters: parameters)
-
-            let task = URLSession.shared.dataTask(with: request) { data, _, _ in
+            let task = self.session.dataTask(with: request) { data, _, _ in
                 do {
                     let model: T = try JSONDecoder().decode(T.self, from: data ?? Data())
                     future.resolve(value: model)
