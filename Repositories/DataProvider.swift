@@ -7,7 +7,9 @@
 //
 import Entities
 
-public class DataProvider {
+public protocol DataProviderProtocol: SetsRepository, TypesRepository, CardsRepository {}
+
+public class DataProvider: DataProviderProtocol {
     private let api: APIProtocol
 
     public init(api: APIProtocol = API(session: URLSession.shared)) {
