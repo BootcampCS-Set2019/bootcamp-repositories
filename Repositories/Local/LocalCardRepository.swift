@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-public class LocalCardRepostory {
+public class LocalCardRepository {
     private var entityName = "Card"
     var manager: DBManager
     var context: NSManagedObjectContext
@@ -29,10 +29,11 @@ public class LocalCardRepostory {
                         let card = Card()
                         card.id = result.value(forKey: "id") as? String
                         card.name = result.value(forKey: "name") as? String
-                        card.imageUrl = result.value(forKey: "imageUrl") as? String
+//                        card.imageUrl = result.value(forKey: "imageUrl") as? String
                         card.set = result.value(forKey: "set") as? String
-                        card.types = result.value(forKey: "types") as? [String]
-                        card.imageData = result.value(forKey: "imageData") as? Data
+//                        card.types = result.value(forKey: "types") as? [String]
+//                        card.imageData = result.value(forKey: "imageData") as? Data
+                        return card
                     })
 
                 future.resolve(value: cards)
@@ -54,10 +55,10 @@ public class LocalCardRepostory {
             cardManagedObject.setValue(card.id,forKeyPath: "id")
             cardManagedObject.setValue(card.image,forKeyPath: "image")
             cardManagedObject.setValue(card.name,forKeyPath: "name")
-            cardManagedObject.setValue(card.imageUrl,forKeyPath: "imageUrl")
+//            cardManagedObject.setValue(card.imageUrl,forKeyPath: "imageUrl")
             cardManagedObject.setValue(card.set,forKeyPath: "set")
-            cardManagedObject.setValue(card.types,forKeyPath: "types")
-            cardManagedObject.setValue(card.imageData,forKeyPath: "imageData")
+//            cardManagedObject.setValue(card.types,forKeyPath: "types")
+//            cardManagedObject.setValue(card.imageData,forKeyPath: "imageData")
 
 
 
@@ -82,10 +83,10 @@ public class LocalCardRepostory {
             cardManagedObject.setValue(card.id,forKeyPath: "id")
             cardManagedObject.setValue(card.image,forKeyPath: "image")
             cardManagedObject.setValue(card.name,forKeyPath: "name")
-            cardManagedObject.setValue(card.imageUrl,forKeyPath: "imageUrl")
+//            cardManagedObject.setValue(card.imageUrl,forKeyPath: "imageUrl")
             cardManagedObject.setValue(card.set,forKeyPath: "set")
-            cardManagedObject.setValue(card.types,forKeyPath: "types")
-            cardManagedObject.setValue(card.imageData,forKeyPath: "imageData")
+//            cardManagedObject.setValue(card.types,forKeyPath: "types")
+//            cardManagedObject.setValue(card.imageData,forKeyPath: "imageData")
 
             self.context.delete(cardManagedObject)
 
