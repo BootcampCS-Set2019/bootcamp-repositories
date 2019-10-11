@@ -14,6 +14,15 @@ public enum RequestType: String {
 
 public enum PathType: String {
     case cards, sets, types
+
+    var entityName: String {
+        switch self {
+        case .cards:
+            return "Card"
+        default:
+            return ""
+        }
+    }
 }
 
 public protocol APIProtocol {
