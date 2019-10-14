@@ -66,7 +66,6 @@
 
 /* Begin PBXFileReference section */
 		BD1C96B42346DDF90088B6A7 /* Entities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Entities.framework; path = Carthage/Build/iOS/Entities.framework; sourceTree = "<group>"; };
-		BDA312C023495E78005E2F84 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		BDA312C223495ECE005E2F84 /* TypesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesRepository.swift; sourceTree = "<group>"; };
 		BDA312C52349FE91005E2F84 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		BDA312C7234A0654005E2F84 /* MagicAPISpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPISpy.swift; sourceTree = "<group>"; };
@@ -96,19 +95,10 @@
 		DC549CC22351083D00DFE1DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC549CC52351083D00DFE1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC549CC72351083D00DFE1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC549CCC2351086600DFE1DD /* Entities.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Entities.framework.dSYM; sourceTree = "<group>"; };
-		DC549CCD2351086600DFE1DD /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
-		DC549CCE2351086600DFE1DD /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
-		DC549CCF2351086600DFE1DD /* Quick.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Quick.framework.dSYM; sourceTree = "<group>"; };
-		DC549CD02351086600DFE1DD /* Nimble.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Nimble.framework.dSYM; sourceTree = "<group>"; };
-		DC549CD12351086600DFE1DD /* 1CE709F7-F09F-3779-A169-25C1C91F7E7A.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "1CE709F7-F09F-3779-A169-25C1C91F7E7A.bcsymbolmap"; sourceTree = "<group>"; };
-		DC549CD22351086600DFE1DD /* Entities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Entities.framework; sourceTree = "<group>"; };
 		DCC7FF54234682A700B60A48 /* SetsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsRepository.swift; sourceTree = "<group>"; };
 		DCC7FF55234682A700B60A48 /* CardsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsRepository.swift; sourceTree = "<group>"; };
 		DCC7FF6A2347749500B60A48 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		DCC7FF6C23477D5F00B60A48 /* DataProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderSpec.swift; sourceTree = "<group>"; wrapsLines = 0; };
-		DCE13D572345223E00D2938A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		DCE13D582345223E00D2938A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,21 +263,6 @@
 			path = Sample;
 			sourceTree = "<group>";
 		};
-		DC549CCB2351086600DFE1DD /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				DC549CCC2351086600DFE1DD /* Entities.framework.dSYM */,
-				DC549CCD2351086600DFE1DD /* Quick.framework */,
-				DC549CCE2351086600DFE1DD /* Nimble.framework */,
-				DC549CCF2351086600DFE1DD /* Quick.framework.dSYM */,
-				DC549CD02351086600DFE1DD /* Nimble.framework.dSYM */,
-				DC549CD12351086600DFE1DD /* 1CE709F7-F09F-3779-A169-25C1C91F7E7A.bcsymbolmap */,
-				DC549CD22351086600DFE1DD /* Entities.framework */,
-			);
-			name = iOS;
-			path = Carthage/Build/iOS;
-			sourceTree = "<group>";
-		};
 		DCC7FF482346828000B60A48 /* Spy */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,11 +284,7 @@
 		DCE13D562345223E00D2938A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC549CCB2351086600DFE1DD /* iOS */,
-				BDA312C023495E78005E2F84 /* RxSwift.framework */,
 				BD1C96B42346DDF90088B6A7 /* Entities.framework */,
-				DCE13D572345223E00D2938A /* Nimble.framework */,
-				DCE13D582345223E00D2938A /* Quick.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

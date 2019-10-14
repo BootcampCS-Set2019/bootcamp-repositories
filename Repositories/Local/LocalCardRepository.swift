@@ -17,6 +17,7 @@ public class LocalCardRepository {
     public init() {
         self.manager = DBManager()
         self.context = manager.persistentContainer.viewContext
+        
     }
 
     public func getAll() -> Future<[Card], APIError> {
