@@ -24,20 +24,16 @@
 		DC17E251234D0159007416BE /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E250234D0159007416BE /* MockURLSession.swift */; };
 		DC17E253234D1542007416BE /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E252234D1542007416BE /* URLSessionDataTaskProtocol.swift */; };
 		DC549C68234F61E900DFE1DD /* LocalCardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC549C67234F61E900DFE1DD /* LocalCardRepository.swift */; };
-		DC549C6C234FBBAA00DFE1DD /* Repositories.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC549C6A234FBBAA00DFE1DD /* Repositories.xcdatamodeld */; };
-		DC549CAF2350F58800DFE1DD /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC549CAE2350F58800DFE1DD /* DBManager.swift */; };
-		DC549CB12350FEEC00DFE1DD /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1C96B42346DDF90088B6A7 /* Entities.framework */; };
-		DC549CBC2351083C00DFE1DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC549CBB2351083C00DFE1DD /* AppDelegate.swift */; };
-		DC549CBE2351083C00DFE1DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC549CBD2351083C00DFE1DD /* ViewController.swift */; };
-		DC549CC12351083C00DFE1DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC549CBF2351083C00DFE1DD /* Main.storyboard */; };
-		DC549CC32351083D00DFE1DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC549CC22351083D00DFE1DD /* Assets.xcassets */; };
-		DC549CC62351083D00DFE1DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC549CC42351083D00DFE1DD /* LaunchScreen.storyboard */; };
-		DC549CD7235109D800DFE1DD /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1C96B42346DDF90088B6A7 /* Entities.framework */; };
-		DC549CD8235109D800DFE1DD /* Entities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD1C96B42346DDF90088B6A7 /* Entities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC81C9C62354C57E0042F4E8 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC81C9C22354C57E0042F4E8 /* Realm.framework */; };
+		DC81C9C72354C57E0042F4E8 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC81C9C32354C57E0042F4E8 /* RealmSwift.framework */; };
+		DC81C9CB2354C61E0042F4E8 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC81C9CA2354C61E0042F4E8 /* Entities.framework */; };
 		DCC7FF57234682A700B60A48 /* SetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF54234682A700B60A48 /* SetsRepository.swift */; };
 		DCC7FF58234682A700B60A48 /* CardsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF55234682A700B60A48 /* CardsRepository.swift */; };
 		DCC7FF6B2347749500B60A48 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF6A2347749500B60A48 /* DataProvider.swift */; };
 		DCC7FF6D23477D5F00B60A48 /* DataProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7FF6C23477D5F00B60A48 /* DataProviderSpec.swift */; };
+		DCDC07422354C92600EA62DE /* LocalCardRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDC07412354C92600EA62DE /* LocalCardRepositoryProtocol.swift */; };
+		DCDC075C2354CD3D00EA62DE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC81C9C52354C57E0042F4E8 /* Nimble.framework */; };
+		DCDC075D2354CD3D00EA62DE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC81C9C42354C57E0042F4E8 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,22 +46,7 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		DC549CD9235109D800DFE1DD /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DC549CD8235109D800DFE1DD /* Entities.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		BD1C96B42346DDF90088B6A7 /* Entities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Entities.framework; path = Carthage/Build/iOS/Entities.framework; sourceTree = "<group>"; };
 		BDA312C223495ECE005E2F84 /* TypesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesRepository.swift; sourceTree = "<group>"; };
 		BDA312C52349FE91005E2F84 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		BDA312C7234A0654005E2F84 /* MagicAPISpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicAPISpy.swift; sourceTree = "<group>"; };
@@ -86,19 +67,16 @@
 		DC17E250234D0159007416BE /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		DC17E252234D1542007416BE /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
 		DC549C67234F61E900DFE1DD /* LocalCardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCardRepository.swift; sourceTree = "<group>"; };
-		DC549C6B234FBBAA00DFE1DD /* Repositories.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Repositories.xcdatamodel; sourceTree = "<group>"; };
-		DC549CAE2350F58800DFE1DD /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
-		DC549CB92351083C00DFE1DD /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC549CBB2351083C00DFE1DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC549CBD2351083C00DFE1DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DC549CC02351083C00DFE1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC549CC22351083D00DFE1DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DC549CC52351083D00DFE1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DC549CC72351083D00DFE1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC81C9C22354C57E0042F4E8 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		DC81C9C32354C57E0042F4E8 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		DC81C9C42354C57E0042F4E8 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		DC81C9C52354C57E0042F4E8 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		DC81C9CA2354C61E0042F4E8 /* Entities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Entities.framework; path = Carthage/Build/iOS/Entities.framework; sourceTree = "<group>"; };
 		DCC7FF54234682A700B60A48 /* SetsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsRepository.swift; sourceTree = "<group>"; };
 		DCC7FF55234682A700B60A48 /* CardsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsRepository.swift; sourceTree = "<group>"; };
 		DCC7FF6A2347749500B60A48 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		DCC7FF6C23477D5F00B60A48 /* DataProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderSpec.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		DCDC07412354C92600EA62DE /* LocalCardRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCardRepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC549CB12350FEEC00DFE1DD /* Entities.framework in Frameworks */,
+				DC81C9CB2354C61E0042F4E8 /* Entities.framework in Frameworks */,
+				DC81C9C62354C57E0042F4E8 /* Realm.framework in Frameworks */,
+				DC81C9C72354C57E0042F4E8 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,14 +95,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDEA283D23440A77002E4BEA /* Repositories.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC549CB62351083C00DFE1DD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC549CD7235109D800DFE1DD /* Entities.framework in Frameworks */,
+				DCDC075C2354CD3D00EA62DE /* Nimble.framework in Frameworks */,
+				DCDC075D2354CD3D00EA62DE /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +138,6 @@
 			children = (
 				BDEA283523440A76002E4BEA /* Repositories */,
 				BDEA284023440A77002E4BEA /* RepositoriesTests */,
-				DC549CBA2351083C00DFE1DD /* Sample */,
 				BDEA283423440A76002E4BEA /* Products */,
 				DCE13D562345223E00D2938A /* Frameworks */,
 			);
@@ -175,7 +148,6 @@
 			children = (
 				BDEA283323440A76002E4BEA /* Repositories.framework */,
 				BDEA283C23440A77002E4BEA /* RepositoriesTests.xctest */,
-				DC549CB92351083C00DFE1DD /* Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,7 +161,6 @@
 				DCC7FF52234682A700B60A48 /* Protocols */,
 				BDEA283623440A76002E4BEA /* Repositories.h */,
 				BDEA283723440A76002E4BEA /* Info.plist */,
-				DC549C6A234FBBAA00DFE1DD /* Repositories.xcdatamodeld */,
 				DCC7FF6A2347749500B60A48 /* DataProvider.swift */,
 			);
 			path = Repositories;
@@ -238,7 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				DC549C67234F61E900DFE1DD /* LocalCardRepository.swift */,
-				DC549CAE2350F58800DFE1DD /* DBManager.swift */,
+				DCDC07412354C92600EA62DE /* LocalCardRepositoryProtocol.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -248,19 +219,6 @@
 			children = (
 			);
 			path = NSManagedObjectContextProtocol;
-			sourceTree = "<group>";
-		};
-		DC549CBA2351083C00DFE1DD /* Sample */ = {
-			isa = PBXGroup;
-			children = (
-				DC549CBB2351083C00DFE1DD /* AppDelegate.swift */,
-				DC549CBD2351083C00DFE1DD /* ViewController.swift */,
-				DC549CBF2351083C00DFE1DD /* Main.storyboard */,
-				DC549CC22351083D00DFE1DD /* Assets.xcassets */,
-				DC549CC42351083D00DFE1DD /* LaunchScreen.storyboard */,
-				DC549CC72351083D00DFE1DD /* Info.plist */,
-			);
-			path = Sample;
 			sourceTree = "<group>";
 		};
 		DCC7FF482346828000B60A48 /* Spy */ = {
@@ -284,7 +242,11 @@
 		DCE13D562345223E00D2938A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BD1C96B42346DDF90088B6A7 /* Entities.framework */,
+				DC81C9CA2354C61E0042F4E8 /* Entities.framework */,
+				DC81C9C52354C57E0042F4E8 /* Nimble.framework */,
+				DC81C9C42354C57E0042F4E8 /* Quick.framework */,
+				DC81C9C22354C57E0042F4E8 /* Realm.framework */,
+				DC81C9C32354C57E0042F4E8 /* RealmSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -342,24 +304,6 @@
 			productReference = BDEA283C23440A77002E4BEA /* RepositoriesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DC549CB82351083C00DFE1DD /* Sample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC549CC82351083D00DFE1DD /* Build configuration list for PBXNativeTarget "Sample" */;
-			buildPhases = (
-				DC549CB52351083C00DFE1DD /* Sources */,
-				DC549CB62351083C00DFE1DD /* Frameworks */,
-				DC549CB72351083C00DFE1DD /* Resources */,
-				DC549CD9235109D800DFE1DD /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Sample;
-			productName = Sample;
-			productReference = DC549CB92351083C00DFE1DD /* Sample.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -375,9 +319,6 @@
 						LastSwiftMigration = 1030;
 					};
 					BDEA283B23440A77002E4BEA = {
-						CreatedOnToolsVersion = 10.3;
-					};
-					DC549CB82351083C00DFE1DD = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
@@ -397,7 +338,6 @@
 			targets = (
 				BDEA283223440A76002E4BEA /* Repositories */,
 				BDEA283B23440A77002E4BEA /* RepositoriesTests */,
-				DC549CB82351083C00DFE1DD /* Sample */,
 			);
 		};
 /* End PBXProject section */
@@ -414,16 +354,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC549CB72351083C00DFE1DD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC549CC62351083D00DFE1DD /* LaunchScreen.storyboard in Resources */,
-				DC549CC32351083D00DFE1DD /* Assets.xcassets in Resources */,
-				DC549CC12351083C00DFE1DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,14 +427,13 @@
 				DC17E24F234CF8C2007416BE /* URLSessionProtocol.swift in Sources */,
 				DCC7FF57234682A700B60A48 /* SetsRepository.swift in Sources */,
 				BDA31342234CCD24005E2F84 /* Futures.swift in Sources */,
-				DC549CAF2350F58800DFE1DD /* DBManager.swift in Sources */,
 				BDA31344234CCD69005E2F84 /* Future.swift in Sources */,
 				DC17E253234D1542007416BE /* URLSessionDataTaskProtocol.swift in Sources */,
+				DCDC07422354C92600EA62DE /* LocalCardRepositoryProtocol.swift in Sources */,
 				DCC7FF58234682A700B60A48 /* CardsRepository.swift in Sources */,
 				DC549C68234F61E900DFE1DD /* LocalCardRepository.swift in Sources */,
 				BDA312C323495ECE005E2F84 /* TypesRepository.swift in Sources */,
 				BDA312C62349FE91005E2F84 /* API.swift in Sources */,
-				DC549C6C234FBBAA00DFE1DD /* Repositories.xcdatamodeld in Sources */,
 				BDA31346234CCD8A005E2F84 /* APIError.swift in Sources */,
 				DCC7FF6B2347749500B60A48 /* DataProvider.swift in Sources */,
 			);
@@ -525,15 +454,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC549CB52351083C00DFE1DD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC549CBE2351083C00DFE1DD /* ViewController.swift in Sources */,
-				DC549CBC2351083C00DFE1DD /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -543,25 +463,6 @@
 			targetProxy = BDEA283E23440A77002E4BEA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DC549CBF2351083C00DFE1DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC549CC02351083C00DFE1DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DC549CC42351083D00DFE1DD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC549CC52351083D00DFE1DD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BDEA284523440A77002E4BEA /* Debug */ = {
@@ -693,7 +594,6 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DVMDCJRNKS;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -725,7 +625,6 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DVMDCJRNKS;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -755,7 +654,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RepositoriesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -775,7 +677,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RepositoriesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -783,48 +688,6 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bootcamp.set2019.RepositoriesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		DC549CC92351083D00DFE1DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Sample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = memo.Sample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DC549CCA2351083D00DFE1DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Sample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = memo.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -861,29 +724,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC549CC82351083D00DFE1DD /* Build configuration list for PBXNativeTarget "Sample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC549CC92351083D00DFE1DD /* Debug */,
-				DC549CCA2351083D00DFE1DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DC549C6A234FBBAA00DFE1DD /* Repositories.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DC549C6B234FBBAA00DFE1DD /* Repositories.xcdatamodel */,
-			);
-			currentVersion = DC549C6B234FBBAA00DFE1DD /* Repositories.xcdatamodel */;
-			path = Repositories.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BDEA282A23440A76002E4BEA /* Project object */;
 }
